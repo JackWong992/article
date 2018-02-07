@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <h1>v-model数据源绑定</h1>
+    <hr>
+    <div id="app"><span v-text="message"></span>
+        <h3>文本输入</h3>
+    v-model:<input type="text"  v-model="message"><br>
+    v-model.lazy: <input type="text" v-model.lazy="message"><br>
+    v-model.number:<input type="text" v-model.number="message"><br>
+    v-model.trim:<input type="text" v-model.trim="message"><br>
+    
+    <hr>
+    多选框绑定一个值：
+    <label>
+    <input type="checkbox"  v-model="istrue" >
+    {{istrue}}</label>   
+    <hr>
+    <label for="istrue">
+        <input type="checkbox"  v-model="array_name" value="huangfl">huangfl
+    </label>
+    <label for="istrue">
+        <input type="checkbox"  v-model="array_name" value="jackwong">jackwong
+    </label>
+    <label for="istrue">
+        <input type="checkbox"  v-model="array_name" value="philonghuynh">philonghuynh
+    </label><br>
+    {{array_name}} <br>
+    <label >
+            <input type="radio" v-model="sex" value="男"> 男
+    </labe>
+    <label>    
+            <input type="radio" v-model="sex" value="女">女
+          
+    </label> <br>
+      你选择的性别是：{{sex}}            
+    </div> 
+    <script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'hello world !',
+            istrue: true,
+            array_name:[],
+            sex: '女'
+        }
+    })
+    </script>
+</body>
+</html>

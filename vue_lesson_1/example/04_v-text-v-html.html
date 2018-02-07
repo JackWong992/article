@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <h1>v-text & v-html </h1>
+    <hr>
+    <div id="app">
+       第一种（普通输出）： {{message}} <br>
+       第二种（v-html输出）：<span v-html="messages"></span>
+    </div>
+    <script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'hello world !',
+            messages: '<h1>hello world !</h1>'                        
+        }
+    })
+    </script>
+</body>
+</html>

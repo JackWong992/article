@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<style type="text/css">
+    .classA{
+        color:red;
+    }
+    .classB{
+        font-size: 50px;
+    }
+</style>
+<body>
+    <h1>hello world</h1>
+    <hr>
+    <div id="app">
+        <img v-bind:src="imgSrc">
+        <div v-bind:class="isok?classA:classB">你好这个世界</div>
+    <hr>
+    <input type="checkbox" v-model="isok">
+    <label for="isok">isok={{isok}}</label>
+    <hr>
+    <div v-bind:style="styleObject">你好，我的名字叫小明；如果你绑定了对象的话，那么这行字就会变成红色</div>
+    </div>
+    <script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            imgSrc: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3116813668,3476052882&fm=173&s=08E273231862B69EFF1500DE0100C091&w=218&h=146&img.JPEG',
+            classA: 'classA',
+            classB: 'classB',
+            isok: true,
+            styleObject:{
+                fontSize: '10px',
+                color:'red'
+            }
+        }
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <h1>vue.directive自定义指令</h1>
+    <hr>
+    <div id="app">
+       <div v-jack="color">{{num}}</div><br>
+        <button v-on:click="add">123</button>
+        <button v-on:click="deduction">456</button>
+        
+    </div>
+    <script type="text/javascript">
+        Vue.directive("jack",function(el,binding){
+            console.log(el);
+            console.log(binding);
+            console.log(binding.name);
+            console.log(binding.expression);
+            console.log(binding.value);            
+            el.style ="color:"+binding.value; 
+        });
+        var app = new Vue({
+            el: '#app',
+            data:{
+                num: 10,
+                color: 'red'
+            },
+            methods:{
+                add:function(){
+                    this.num--;
+                },
+                deduction:function(){
+                    this.num++;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

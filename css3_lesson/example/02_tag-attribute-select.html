@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    .box p{
+        height: 30px;
+        border: 1px solid red;
+    }
+    p[class]{background: green;}
+    p[class="jack"]{background:pink;}
+    p[class~="first"]{background: black;}
+    p[class^="g"]{background: blue;}
+    p[class$="m"]{background: yellow;}
+    p[class*="q"]{font-size: 30px;}
+    p[class|="a"]{color: red;}
+    </style>
+</head>
+<body>
+    <h1>tag-attribute-select</h1>
+    <hr>
+    <div class="box">
+        <p class="jack">你好，你真的好吗？</p>
+        <p class="alex">你好，你真的好吗？</p>
+        <p class="pony first">你好，你真的好吗？</p> 
+        <p class="grose">你好，你真的好吗？</p>        
+        <p class="gtony">你好，你真的好吗？</p>        
+        <p class="tom">你好，你真的好吗？</p>
+        <p class="a-q">这是一个测试</p>
+        <p class="a-q">这是一个测试</p>                       
+        <p class="a">这是一个测试</p>                                                      
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS语法基础</title>
+    <style>
+        .wrapper{
+            margin: 250px auto;
+            width: 600px;
+            border: 1px solid;
+            padding-left: 200px;
+            padding-top: 65px;
+            padding-bottom: 65px;  
+            background: #ccc;
+            color: #fff;    
+            font-size: 15px;
+            font-family: Helvetica, Arial, sans-serif;
+            box-shadow: 6px 13px 41px 0px rgba(0,0,0,0.39);      
+        }
+        .text {
+            width: 85px;
+            border-radius: 2px;
+            margin-right: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        请输入你的QQ号码：
+        <input type="text" class="text">
+        <input type="button" value="判断">
+        <p>
+            1. 判断你有没有输入
+            <br> 2. 输入的是不是数字
+            <br> 3. 0不能放在首位
+            <br> 4. 输入的不能是小数
+            <br> 5. 输入的数字必须在5位以上，10位以下
+            <br>
+        </p>
+    </div>
+    <script>
+        var txt = document.getElementsByTagName('input')[0];
+        var btn = document.getElementsByTagName('input')[1];
+
+        function tempDate(text) {
+            if (text === '') {
+                alert('请输入QQ号码！！！');
+                txt.value = '';
+            }
+            else if(isNaN(Number(text))==true){
+                alert('请你输入数字哦');
+                txt.value = '';
+            }
+            else if (text.charAt(0) == 0) {
+                alert('注意，第一位不可能为0哦');
+                txt.value = '';
+            }            
+             else if(parseInt(text)!==parseFloat(text)){
+                 alert('不能输入小数哟');
+                 txt.value='';
+            }
+            else if(text.length<=5 ||text.length>10){
+                alert('输入的长度有误哟');
+                txt.value='';
+            }
+            else{
+                alert('恭喜你输入正确~');
+                txt.value='';
+            }
+        }
+        btn.onclick = function () {
+            var a = txt.value;
+            tempDate(a);
+        }
+    </script>
+</body>
+
+</html>

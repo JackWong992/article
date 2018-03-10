@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        li {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>列表循环</h2>
+    <ul class="list">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <hr>
+    <h2>按钮循环</h2>
+    <div id="btn"></div>
+    <hr>
+    <h2>10个盒子放在一行</h2>
+    <div id="b"></div>
+    <script type="text/javascript">
+        var oList = document.getElementById('list');
+        var oLi = document.getElementsByTagName('li');
+        var arr = ['今天','明天','后天'];
+        var oBtn =document.getElementById('btn');
+        var ob= document.getElementById('b')
+        for(var i= 0; i<oLi.length;i++){
+          oLi[i].innerHTML= arr[i]
+        }
+        var btn= document.getElementById('btn')
+        // 第二个例子开始
+        for(var a= 0;a<10;a++){
+           oBtn.innerHTML+= '<input type="button" value="按钮">'
+        } 
+        //第三个例子开始
+       
+    </script>
+</body>
+</html>

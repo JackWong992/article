@@ -29,7 +29,7 @@ sayHello()
 *声明必须放到调用前面*<br>
 
 ----
-[回到顶部](#JavaScript的函数与作用域)
+[回到顶部](# JavaScript的函数与作用域)
 
 ### 参数<br>
 
@@ -60,6 +60,7 @@ function manAttributes(name,age,sex){
 }
 ```
 arguments是一个伪数组，它的原型链直接指向的是object。<br>
+[回到顶部](# JavaScript的函数与作用域)
 ### 重载
 ```
 C语言的重载范例：

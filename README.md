@@ -8,7 +8,9 @@
 
 ---
 ### JavaScript语法<br> 
- * JavaScript语法基础：函数与作用域<br>
+ * JavaScript语法基础：
+  * * [函数与作用域](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/JS%E5%9F%BA%E7%A1%803%EF%BC%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F.md)<br>
+  
 检测你的基础语法学的是否扎实：<br>
 1. 第一题 <br>
 请输入一个QQ号码进行判断：<br>

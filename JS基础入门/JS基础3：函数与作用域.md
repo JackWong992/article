@@ -239,3 +239,30 @@ function fn(){
     }
 }
 ```
+---
+作用域问题：<br>
+作用域的问题我听了若愚讲的太麻烦了，所以还是不能轻易的分辨作用域，所以说白了，就是若愚讲的仔细，啰嗦，而且我还没听懂。<br>
+1. 作用域问题遵循就近原则 <br>
+*这里我们所说到的作用域是指当前的变量所针对的范围*
+```
+第一种：
+ var a=10;
+ function b(){
+     var a=20;
+     console.log(a);
+ }
+ 显然就就近原则来看，a的结果是20
+
+ 第二种：
+ var a=10;
+ function b(){
+     console.log(a);
+     console.log("balabala");
+     console.log("balabala");
+     console.log("balabala");
+     console.log("balabala");
+     console.log("balabala");
+     console.log("balabala");
+    var a=20;     
+ }
+```

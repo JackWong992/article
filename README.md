@@ -25,8 +25,8 @@
 ### JavaScript篇<br> 
  * JavaScript语法基础：<br>
    * [函数与作用域](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/JS%E5%9F%BA%E7%A1%803%EF%BC%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F.md)<br>
- * jQuery篇<br>
-   * [函数与作用域](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%951.md)<br>
+ * jQuery篇
+   * [函数与作用域](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%951.md)<br>
 
 ---
 
@@ -37,7 +37,16 @@
 答案地址：www.feelone.top/article/JS基础入门/js_base.html<br>
 
 ### 框架篇
+
+----
+
 ### Webpack篇
+
+----
+
 ### HTTP篇
  * [HTTP入门：URL、DNS&Hosts、请求、响应](https://github.com/JackWong992/article/blob/master/http/HTTP%EF%BC%9A01%E5%85%A5%E9%97%A8.md)<br>
+
+----
+
 ### 奇淫巧计篇

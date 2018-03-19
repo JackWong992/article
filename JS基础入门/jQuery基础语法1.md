@@ -46,6 +46,11 @@ $('li').filter('[title=footer]').css('background','orange')
 * 多种筛选方法：js最后一句代码中通过filter选中最后一行title=footer控制改变颜色<br>
 [在线案例演示](http://js.jirengu.com/himuvinose/3/edit)
 
+* jQuery属性选择：
+1. `[ xx=yy ]`: 属性名称xx=yy的元素被选中
+2. `[ xx^=abc ]`:属性名称xx中以abc为开头的元素被选中
+3. `[ xx$=abc ]`:属性名称为xx以abc为结尾的元素被选中
+4. `[ xx="aa bb cc" ]`:属性名称为aa bb cc元素被选中
 ----
 ### 方法函数化
 在jQuery中，要把原生JS中的一些方法想象成一个函数。
@@ -105,6 +110,36 @@ $('li').html('hello');
 * 当选中是一组元素的时候，赋值是一组中的所有元素
 
 ----
+### 常用方法：
+```
+addClass()    //添加一个class
+removeClass()  //移除class
+width()   //获取div的宽度 
+innherWidth() //获取width+padding的长度
+outerWidth()  //获取width+padding+border的宽度
+outerWidth(true) //获取width+padding+margin+border的宽度
+toggleClass()  //自动判断类里面是否有这个class，如果有删除，没有没有就自动添加。
+show()   //显示相关信息
+hide()   //隐藏相关信息
+```
+```
+html:  <input type="button" value="button">
+       <div>123</div>
+js:
+  var a=true;
+  $('input').on('click',function(){
+    if(a){
+      ('div').show();
+      a=!a;
+    }else{
+      ('div').hide();
+      a=!a;
+    }
+  })
+```
+[show()/hide()实例演示](http://js.jirengu.com/hirazikoza/2/edit)
+[toggle()实例演示](http://js.jirengu.com/yaxeripico/2/edit)
+
 $()下的常用方法：
 ```
 has()  //包含
@@ -122,8 +157,8 @@ eq() //更确切到某一个元素的下标，从0开始
 [not、has、filter区别在线演示](http://js.jirengu.com/varibemohe/2/edit)<br>
 
 `next()`和`prev()`都是指查找上一个元素或者下一个元素
-下面提到的`find()`和`has()`有点相类似，`find()`查找的是父级元素下的子元素，所以这里要注意：<br>
-`has() find() filter()`区别。
+下面提到的`find()`和`has()`有点相类似，`find()`查找的是父级元素下的子元素，所以这里要注意：`has() find() filter()`区别。
+
 [next()、prev()、find()在线演示](http://js.jirengu.com/soyetiruba/2/edit)
 
 `eq()`具体的是查找到某一个具体的元素，例如：
@@ -147,19 +182,21 @@ js: $('li').eq(2).css('background','red')
   
  js: console.log($('.two').index() ) //2
 ```
-### demo: 编写选项卡
 
-* 常用方法：
-```
-addClass()    //添加一个class
-removeClass()  //移除class
-width()   //获取div的宽度 
-innherWidth() //获取width+padding的长度
-outerWidth()  //获取width+padding+border的宽度
-outerWidth(true) //获取width+padding+margin+border的宽度
-```
+
 ----
 * DOM节点操作<br>
+`first()`一般是选中一组元素中的第一个元素<br>
+`last()`一般选中一组元素中的最后一个元素<br>
+`slice(x,y)`截取一组元素中的某段元素,x表示开始的位置，y表示结束的位置-1<br>
+`nextAll()`下面的所有节点都会被选中<br>
+`preAll()`上面的所有节点都被选中<br>
+`sibling()`找出元素的所有兄弟节点<br>
+`children()`获取所有父级元素的子元素<br>
+`find()`查找到某个具体的元素<br>
+`parent()`获取父节点<br>
+`parents()`获取当前元素所有的祖先节点<br>
+`close`
 `insertBefore`和`before`<br>
 `insertAfter`和`after`<br>
 `appendTo`和`append`<br>
@@ -168,6 +205,11 @@ outerWidth(true) //获取width+padding+margin+border的宽度
 解释：<br>
 （1）把span添加到div的前面<br>
 （2）span的前面必须是div  <br>
+
+[first()、last()、slice()实例演示](http://js.jirengu.com/ziwaniyove/2/edit)
+[find()、children()实例演示](http://js.jirengu.com/zoyozayaza/2/edit)<br>
+find()相比较children()查找更加具体
+[parent()、parents()]()
 
 ----
 * `on()`和`off()`<br>
@@ -198,7 +240,7 @@ $('div').onclick({
   }
 })
 ```
-`off()`关闭某个事件，注意这个关闭要加在到适当的地方，一般会加在事件完成以后之后，而不是在事件没触发就加在后面，这样是导致事件不会触发。<br>
+* `off()`关闭某个事件，注意这个关闭要加在到适当的地方，一般会加在事件完成以后之后，而不是在事件没触发就加在后面，这样是导致事件不会触发。<br>
 ```
 $('div').on('click' , function(){
    console.log('1')}; 
@@ -215,7 +257,7 @@ eg：
 
 ---
 
-###  js中一些放在在jQuery中是什么样的？
+###  js中一些事件在jQuery中是什么样的？
 ```
   $('div').click(function( ev ){ 
 

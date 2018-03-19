@@ -107,7 +107,127 @@ $('li').html('hello');
 ----
 $()下的常用方法：
 ```
-
-filter()
+has()  //包含
+filter() //筛选元素
+not() //筛选的反义词
 attr()  //设置元素的属性
+next()  //下一个兄弟节点
+prev() //上一个兄弟节点
+find() //查找
+eq() //更确切到某一个元素的下标，从0开始
 ```
+上面我们知道has()和filter()的作用，现在我们来想一下他们的区别：<br>
+`has()`是包含，就有筛选的作用，但是于筛选不同的是has()只能用于父级元素下的子级元素<br>
+`filter()`则是没有那么多限制，直接去找父级元素<br>
+[not、has、filter区别在线演示](http://js.jirengu.com/varibemohe/2/edit)<br>
+
+`next()`和`prev()`都是指查找上一个元素或者下一个元素
+下面提到的`find()`和`has()`有点相类似，`find()`查找的是父级元素下的子元素，所以这里要注意：<br>
+`has() find() filter()`区别。
+[next()、prev()、find()在线演示](http://js.jirengu.com/soyetiruba/2/edit)
+
+`eq()`具体的是查找到某一个具体的元素，例如：
+```
+<ul>
+  <li>123</li>
+  <li>456</li>
+  <li>789</li>
+  <li>012</li>
+</ul>  
+js: $('li').eq(2).css('background','red')
+//第3个li变色
+```
+`index()`一组元素的索引，可以查到当前元素在所有兄弟节点的中的位置
+```
+<ul>
+  <li>123</li>
+  <li>456</li>
+  <li class="two">789</li>
+  <li>012</li>
+  
+ js: console.log($('.two').index() ) //2
+```
+### demo: 编写选项卡
+
+* 常用方法：
+```
+addClass()    //添加一个class
+removeClass()  //移除class
+width()   //获取div的宽度 
+innherWidth() //获取width+padding的长度
+outerWidth()  //获取width+padding+border的宽度
+outerWidth(true) //获取width+padding+margin+border的宽度
+```
+----
+* DOM节点操作<br>
+`insertBefore`和`before`<br>
+`insertAfter`和`after`<br>
+`appendTo`和`append`<br>
+`prependTo`和`prepend`<br>
+`$('span').insertBefore($('div'))`与`$('span').before('div')`<br>
+解释：<br>
+（1）把span添加到div的前面<br>
+（2）span的前面必须是div  <br>
+
+----
+* `on()`和`off()`<br>
+说到这里我要介绍一下jQuery中点击事件的两种写法：
+```
+第一种：
+$('div').click( function(){
+    console.log('1');
+})
+第二种：
+$('div).on('click' , function(){
+   console.log('1');
+})
+```
+这里的第二种好处是可以针对的是不止一种点击事件。举例说明：
+```
+$('div').on('click mouseover' , function(){
+  console.log(123)         //鼠标移入会弹出123，鼠标点击也会弹出123
+})
+```
+```
+$('div').onclick({
+  'click': function(){
+    console.log(1);
+  },
+  'mouseover': function(){
+    console.log(2);
+  }
+})
+```
+`off()`关闭某个事件，注意这个关闭要加在到适当的地方，一般会加在事件完成以后之后，而不是在事件没触发就加在后面，这样是导致事件不会触发。<br>
+```
+$('div').on('click' , function(){
+   console.log('1')}; 
+      $('div')).off()       //如果()什么都不写是默认关闭所有事件，如果写了'click'就是关闭点击事件，或者别的事件
+```
+* `scrollTop()`获取屏幕滚动的距离<br>
+eg：
+```
+  $(document).click(function(){
+    alert( $(window).scrollTop() );
+  })
+```
+点击某一个位置，弹出页面滚动的距离。
+
+---
+
+###  js中一些放在在jQuery中是什么样的？
+```
+  $('div').click(function( ev ){ 
+
+  })
+```
+event对象：
+* 阻止默认事件：`ev.preventDefault() `
+* 阻止冒泡的操作：`ev.stopPropagation()`
+* 阻止默认事件+阻止冒泡操作：`retutrn false`;
+* 键盘代码：`ev.which` //keycode<br>
+
+`one()`对象：表示代码只执行一次：
+`$('div').one('click',function(){...})`<br>
+以上代码只会执行事件一次。
+`offset`，,

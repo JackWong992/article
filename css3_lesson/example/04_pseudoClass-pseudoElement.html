@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            background: black;
+            color: white;
+            font-size: 30px;
+            line-height: 100px;
+            text-align: center;
+            display: none;        
+        }
+        div:target{
+            display: block;
+        }
+        input:disabled{
+            font-size: 20px;
+        }
+        input:enabled{
+            color: red;
+        }
+        input:checked{
+            width: 100px;
+            height: 100px;
+        }
+        label{
+            float:left;
+            margin: 0 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        label input{
+            position: absolute;
+            left: -50px;
+            top: -50px;
+        }
+        span{
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: 3px solid red;
+        }
+        input:checked~span{
+            background: black;
+        }
+        p:first-line{
+            background: pink;
+        }
+        p:first-letter{
+            font-size: 40px;
+        }
+        p::selection{
+            background: red;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>伪元素和伪类</h1>
+    <hr>
+    <h2>E:target: 表示当前URL片段的元素类型，这个元素必须是E</h2>
+    <a href="#mottole1">div1</a>
+    <a href="#mottole2">div2</a>
+    <a href="#mottole3">div3</a> 
+    <div id="mottole1">div1</div>
+    <div id="mottole2">div2</div>       
+    <div id="mottole3">div3</div> 
+    <hr> 
+    <h2>E:disabled 表示不可点击的表单</h2>
+    <input type="text" value="你好吗？" disabled> 
+    <hr>
+    <h2>E:enabled 表示可点击的表单</h2>
+    <input type="text" value="你好吗？"> 
+    <hr>
+    <h2>E：checked 表示已经选中的checkbox 或者radio</h2>
+    <input type="radio" >
+    <input type="checkbox" >                  
+    <input type="checkbox" >                  
+    <input type="checkbox" >  
+    <hr>
+    <h2>E:checked 与 x~y(表示x下面的相邻的兄弟元素)配合使用</h2>
+    <label >
+        <input type="radio"  name="tab">
+        <span></span>
+    </label>
+    <label >
+        <input type="radio"  name="tab">
+        <span></span>
+    </label>
+    <label >
+        <input type="radio"  name="tab">
+        <span></span>
+    </label> <br> <br><br> <br>   
+    <hr>
+    <h2>E:first-line and E:first-letter and E::selection</h2>
+    <p>你真的好吗？<br> <br>你真的好吗？你真的好吗？你真的好吗？你真的好吗？你真的好吗？你真的好吗？你真的好吗？你真的好吗？你真的好吗？你真的好吗？</p>                                                                                                              
+</body>
+</html>

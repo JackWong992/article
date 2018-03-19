@@ -77,7 +77,7 @@ parseInt()和parseFloat()使用区别：<br>
 （2）如果第一个字符不是“-”或者数字则返回为NaN<br>
 （3）如果是继续解析，直到非数值模式为止<br>
 （4）0开头当做八进制，0x开头当做16进制 <br>
-example:
+example:  
 ```
     parseInt('blue'); //NaN
     parseFloat('-23Abs'); //-23
@@ -95,8 +95,28 @@ NaN!==NaN  NaN+number=NaN<br>
 注释：<br>
 单行注释： //<br>
 多行注释： /* */<br>
+* 其他类型转换为字符串：<br>
+这里的其他类型是指除字符串的类型<br>
+(1) 普通写法：<br>
+boolean类型，数字类型使用：toString()<br>
+null无法转为字符串类型错误提示：`Cannot read proerty 'toString' of null` <br>
+undefined无法转为字符串类型错误提示：`Cannot read proerty 'toString' of undefined`<br>
+对象转换：`toString()`结果：`[object object]`<br>
+(2)老司机写法：`其他类型+''`
+(3)全局函数方法：`window.toString()`转换
 
---- 
+* 其他类型转换为`boolean`类型<br>
+一般写法调用`boolean()`:boolean()转换<br>
+老司机写法使用`!!xx` : `!!1=>true ,!!"  "=>true`
+
+- 其他类型转换为数字类型<br>
+(1)`Number('1')==>1`<br>
+(2)`parseInt('1',10)==>1` //注意这里的10要必须写上<br>
+(3)`parseFloat('1.23')==>1.23`<br>
+(4)`'1'-0===1`<br>
+(5)`+'1'===1`
+
+---- 
 
 变量作用域：<br>
 局部变量：定义在一个函数里，只能在这个函数里使用<br>

@@ -196,20 +196,52 @@ js: $('li').eq(2).css('background','red')
 `find()`查找到某个具体的元素<br>
 `parent()`获取父节点<br>
 `parents()`获取当前元素所有的祖先节点<br>
-`close`
-`insertBefore`和`before`<br>
-`insertAfter`和`after`<br>
-`appendTo`和`append`<br>
-`prependTo`和`prepend`<br>
-`$('span').insertBefore($('div'))`与`$('span').before('div')`<br>
-解释：<br>
-（1）把span添加到div的前面<br>
-（2）span的前面必须是div  <br>
+`closest()`接收一个参数，找指定的一个最近的祖先元素<br>
 
-[first()、last()、slice()实例演示](http://js.jirengu.com/ziwaniyove/2/edit)
+[first()、last()、slice()实例演示](http://js.jirengu.com/ziwaniyove/2/edit)<br>
 [find()、children()实例演示](http://js.jirengu.com/zoyozayaza/2/edit)<br>
-find()相比较children()查找更加具体
-[parent()、parents()]()
+find()相比较children()查找更加具体<br>
+[parent()、parents()](http://js.jirengu.com/jacudovatu/3/edit)<br>
+[closest()实例演示](http://js.jirengu.com/jacudovatu/3/edit)<br>
+`closest()`接收一个参数，找到离它最近的一个元素的父级元素（也包括自己），如果父极元素没有这个参数，就会往祖先级查找.
+
+* 节点操作：
+  * 创建节点：<br>
+`<''>` //例如创建一个div元素，可以这样：`('<div></div>')`
+  * 节点操作:<br>
+`append()`把元素添加到指定的节点里面，且是最后<br>
+`prepend()`把元素添加到指定的节点的里面，且是最前<br>
+`before()`把元素添加到指定的节点的前面<br>
+`after()`把元素添加到指定的节点的后面<br>
+当然也有`insertAfter(),insertBefore(),appendTo(),prependTo()`等操作符，意思是一样的，但是控制的元素是不一样的：主要是作用于开始的元素<br>
+[append(),prepend(),before(),after()实例后面](http://js.jirengu.com/kumequtuwa/2/edit)<br>
+
+  * remove() 删除某个节点<br>
+  * clone()克隆某个节点<br>
+[remove(),clone()实例演示](http://js.jirengu.com/magemihuwa/2/edit)<br>
+克隆和删除有所不同，实际过程中删除进行的是剪切操作，克隆针对的是复制操作。<br>
+
+  * index()索引值，代表的就是当前元素在所有兄弟节点中的排行位置
+```
+html: 
+<ul>
+  <li>123<li>
+  <li>123<li>
+  <li id="abc">123<li>
+  <li>123<li>  
+</ul>
+
+JS:console.log($('#123').index())    //2
+```
+当然，如果是这样：
+```
+  <div><span>123</span></div>
+  <div><span>123</span></div>
+  <div><span id="d">123</span></div>
+  <div><span>123</span></div>
+```
+如果想查看`<span id="d">123</span>`在所有span元素中的位置，可以这样：
+&ensp;&ensp;&ensp;`console.log($('#d').index('span'))`
 
 ----
 * `on()`和`off()`<br>

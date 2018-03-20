@@ -10,8 +10,8 @@
 ### 简单类型和复杂类型之间存储：
 * 简单类型存在`stack（栈）`
 * 复杂类型存在于`Heap(堆)`，将地址存入`stack`<br>
-要注意的是：对于复杂类型来说，存入的`stack地址`和`Heap`之间的关系是引用。
-其中简单数据类型的代表有：number,null,undefined,symbol,boolean
-复杂数据类型的代表有：object(array,function,正则表达式)
-string比较复杂不做研究
+要注意的是：对于复杂类型来说，存入的`stack地址`和`Heap`之间的关系是引用。<br>
+其中简单数据类型的代表有：number,null,undefined,symbol,boolean<br>
+复杂数据类型的代表有：object(array,function,正则表达式)<br>
+string比较复杂不做研究,既可以是栈内存也可以是堆内存<br>
 ## 对象拷贝

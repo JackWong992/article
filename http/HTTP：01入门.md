@@ -114,8 +114,55 @@ GET/POST 获取内容 /上传内容<br>
 1. 打开`Network`
 2. 地址栏输入网址
 3. 在NetWork点击，查看`requeset`,点击`view source`
-4. 
+4. 如果有请求的第四部分，那么在 FormData 或 Payload 里面可以看到
 
+## 响应
+第一个GET请求响应对应
+```
+    HTTP/1.1  200 OK
+    Accept-Ranges: bytes
+    Cache-Control: private,no-cache,pro-revalidate,no-transform
+    Connection:Keep-Alive
+    Content-Length: 2443
+    Content-Type: text/html
+    Date: Tue,10Oct 2017 09:14:05 GMT
+    Etag: "5886041d-98b"
+    Last-Modified:Mon,23 Jan 2017 13:24:25
+    Pragma: no-cache
+    Server: bfe/1.0.8.18
+    Set-Cookie: BDDRZ=27315;max-age=86400;domain=.baidu.com ; path=/
+```
+第二个POST请求响应对应：
+```
+    HTTP/1.1 302 Found
+    Connection: Keep-Alive
+    Conetent-Length:17931
+    Conetent-Type: text/html
+    Date: Tue,10 Oct 2017 09:19:47 GMT
+    Etag: "55d9749e-460b"
+    Server: bfe/1.0.8.18
+```
+响应的格式：
+1 &ensp;&ensp;  协议/版本号  状态码  状态解释
+2 &ensp;&ensp;   key1:      value1
+2 &ensp;&ensp;   key2:       value2
+2 &ensp;&ensp;   Content-Length: 17931
+2 &ensp;&ensp;   Content-Type: text/html
+3 <br>
+4 要下载的内容<br>
+* 状态码：服务器对浏览器说的话
+* 1xx
+* 2xx
+    * 200 访问成功
+* 3xx
+    * 301 永久性出现问题
+    * 302 暂时性出现问题
+* 4xx
+    * 404 浏览器出现错误
+* 5xx
+    * 502 服务器出现错误
 
+第二部分的Contet-Type标注了第4部分的格式
+第二部分的Content-Type遵循MIME规范
 
 

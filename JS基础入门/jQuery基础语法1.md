@@ -272,4 +272,4 @@ event对象：
 `one()`对象：表示代码只执行一次：
 `$('div').one('click',function(){...})`<br>
 以上代码只会执行事件一次。
-`offset`，,
+`offset`

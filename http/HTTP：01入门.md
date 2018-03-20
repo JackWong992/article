@@ -110,8 +110,11 @@ GET/POST 获取内容 /上传内容<br>
 * 如果没有写路径，路径默认为 /
 * 第二部分Content-Type实际为第四部分的格式
 
-
-
+* 使用chrome发送请求：
+1. 打开`Network`
+2. 地址栏输入网址
+3. 在NetWork点击，查看`requeset`,点击`view source`
+4. 
 
 
 

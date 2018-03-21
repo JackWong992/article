@@ -222,6 +222,7 @@ find()相比较children()查找更加具体<br>
 克隆和删除有所不同，实际过程中删除进行的是剪切操作，克隆针对的是复制操作。<br>
 
   * index()索引值，代表的就是当前元素在所有兄弟节点中的排行位置
+  [选项卡](http://js.jirengu.com/cikurufovu/2/edit)
 ```
 html: 
 <ul>

@@ -1,4 +1,8 @@
-# Math对象
+# Math对象&&数组&&Date
+* Math对象
+* 数组
+* Date
+## Math对象
 Math对象是JS的内置对象，提供了一系列的数学常数和方法。<br>
 Math对象只提供了静态的属性和方法，所以使用时不用实例化
 
@@ -81,6 +85,15 @@ function randomStr(len) {
     }
 
 ```
-数组
+## 数组
+数组的创建有三种：
+1. 无参数构造函数，创建一空数组
+`var a1=new Array()`<br>
+2. 一个数字参数构造函数，指定数组的长度，创建指定长度的数组
+`var a2 = new Array(5)`<br>
+*创建了一个长度为5的数组*<br>
+3. 带有初始化数组的构造函数，创建数组并初始化的参数数据<br>
+`var a3= new Array(4,'hello',new Date())`<br>
+ 
 
 

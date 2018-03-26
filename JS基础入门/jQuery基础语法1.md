@@ -288,21 +288,11 @@ eg：
 ```
 点击某一个位置，弹出页面滚动的距离。
 
+* jQuery中的遍历
+ * each()
+   * 回调函数的两个参数
+   * this指向
+   * return false
+
 ---
 
-###  js中一些事件在jQuery中是什么样的？
-```
-  $('div').click(function( ev ){ 
-
-  })
-```
-event对象：
-* 阻止默认事件：`ev.preventDefault() `
-* 阻止冒泡的操作：`ev.stopPropagation()`
-* 阻止默认事件+阻止冒泡操作：`retutrn false`;
-* 键盘代码：`ev.which` //keycode<br>
-
-`one()`对象：表示代码只执行一次：
-`$('div').one('click',function(){...})`<br>
-以上代码只会执行事件一次。
-`offset`

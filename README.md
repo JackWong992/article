@@ -33,7 +33,7 @@
    * [正则表达式](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/JS%E5%9F%BA%E7%A1%807%EF%BC%9A%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)<br>
  * jQuery篇<br>
    * [jQuery基础语法1：使用jQuery你需要知道的背景](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%951.md)<br>
-   * [jQuery基础语法2:获取元素和设置元素](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%952.md)<br>
+   * [jQuery基础语法2：获取元素和设置元素](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%952.md)<br>
 
 ---
 

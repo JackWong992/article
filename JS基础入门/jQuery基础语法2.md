@@ -66,6 +66,7 @@
 选中以`value=123`为开头的值<br>
 选中以`value=111`为结尾的值<br>
 选中含有`value=2`的值<br>
+如果含有多个元素属性，例如`$('input[class='123 234']')`的时候需要加入`''`
 
 ---
 
@@ -96,4 +97,15 @@
     <div >333</div>
 
     $('div').length //  3    
+```
+与原生JS不同的是这里的`$()`得到的是一个集合，并不是一个单元素，也可以把他想象成一个数组，当只有一个元素的时候长度为1.
+因此我们可以通过`length`属性来判断元素是否存在。
+```
+    var color = ''
+    $('span').click(function(){
+        color=$(this).html();
+    })
+    $('div').click(function(){
+        $(this).css('background',color)
+    })
 ```

@@ -27,13 +27,18 @@
  * CSS中的那些套路<br>
     * [01.CSS为什么那么难学？](https://github.com/JackWong992/article/blob/master/css%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E5%A5%97%E8%B7%AF/01_css%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9A%BE%E5%AD%A6%EF%BC%9F.md)<br>
    * [02.CSS的高度和宽度](https://github.com/JackWong992/article/blob/master/css%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E5%A5%97%E8%B7%AF/02_%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6.md)<br>
+  
 ### JavaScript篇<br> 
  * JavaScript语法基础：<br>
    * [函数与作用域](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/JS%E5%9F%BA%E7%A1%803%EF%BC%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F.md)<br>
    * [正则表达式](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/JS%E5%9F%BA%E7%A1%807%EF%BC%9A%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)<br>
+   
+ ---
+ 
  * jQuery篇<br>
-   * [jQuery入门1：使用jQuery你需要知道的背景](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%951.md)<br>
-   * [jQuery基础语法：jQuery中的运动](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%955.md)<br>
+   * [jQuery基础语法1：使用jQuery你需要知道的背景](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%951.md)<br>
+   * [jQuery基础语法2：获取元素和设置元素](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%952.md)<br>
+   * [jQuery基础语法3：class相关的操作](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%953.md)<br>
 
 ---
 

@@ -38,6 +38,7 @@
    * [jQuery基础语法1：使用jQuery你需要知道的背景](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%951.md)<br>
    * [jQuery基础语法2：获取元素和设置元素](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%952.md)<br>
    * [jQuery基础语法3：class相关的操作](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%953.md)<br>
+   * [jQuery基础语法4：节点的选择与节点的操作](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/jQuery%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%954.md)<br>
 
 ---
 

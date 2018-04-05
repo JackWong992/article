@@ -31,6 +31,7 @@
 ### JavaScript篇<br> 
  * JavaScript语法基础：<br>
     * [入门基础1：规范和调试相关](https://github.com/JackWong992/article/blob/master/JS%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/JS%E5%9F%BA%E7%A1%801%EF%BC%9A%E5%85%A5%E9%97%A8.md)<br>
+    * [入门基础2：数据类型，运算符，运算符优先级，流程控制语句]()
 
 ---
 

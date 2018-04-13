@@ -50,7 +50,7 @@
 ----
 
 ## 工程篇
-* github使用技巧
+* [github使用技巧](https://github.com/JackWong992/article/blob/master/%E5%B7%A5%E7%A8%8B%E5%8C%96/github%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.md)
 ----
 
 ## HTTP篇
